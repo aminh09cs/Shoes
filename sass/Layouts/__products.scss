@@ -3,6 +3,11 @@
     .products__content{
         position: relative;
         left: 45%;
+
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
         @include responsive(lg){
             left: 30%;
         }
@@ -11,13 +16,9 @@
             top: -100px;
         }
         @include responsive(sm){
-            left: -2px;
+            left: 40px;
             top: -147px;
         }
-
-        display: flex;
-        align-items: center;
-        gap: 16px;
         @include responsive(sm){
             gap: 0;
         }
@@ -33,6 +34,9 @@
                 }
                 &:hover{
                     background-color: #FAFF23;
+                }
+                &:hover{
+                    box-shadow: 0 0 5px 5px greenyellow;
                 }
                 &:hover .img{
                     animation: scale-shoe-item 1s infinite;

@@ -458,7 +458,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .products__container .products__content {
-    left: -2px;
+    left: 40px;
     top: -147px;
   }
 }
@@ -480,6 +480,9 @@ a {
 }
 .products__container .products__content__item div:hover {
   background-color: #FAFF23;
+}
+.products__container .products__content__item div:hover {
+  box-shadow: 0 0 5px 5px greenyellow;
 }
 .products__container .products__content__item div:hover .img {
   animation: scale-shoe-item 1s infinite;
