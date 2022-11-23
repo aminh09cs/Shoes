@@ -1,0 +1,11 @@
+//RESET CSS
+@import "./Base/reset";
+
+//MIXIN - VARIABLES CSS
+@import "./Mixin/mixin";
+@import "./Mixin/variables";
+
+//LAYOUT
+@import "./Layouts/header";
+@import "./Layouts/main";
+@import "./Layouts/_products"

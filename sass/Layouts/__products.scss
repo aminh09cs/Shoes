@@ -1,0 +1,72 @@
+.products__container{
+    position: relative;
+    .products__content{
+        position: relative;
+        left: 45%;
+        @include responsive(lg){
+            left: 30%;
+        }
+        @include responsive(md){
+            left: 10%;
+            top: -100px;
+        }
+        @include responsive(sm){
+            left: -2px;
+            top: -147px;
+        }
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        @include responsive(sm){
+            gap: 0;
+        }
+        &__item{
+            div{
+                background: linear-gradient(180deg, rgba(250, 255, 35, 0.99) -4.65%, rgba(250, 255, 35, 0) 100%);
+                border-radius: 28px;
+                margin-bottom: 10px;
+                transition: background-color 1s;
+
+                @include responsive(sm){
+                    text-align: center;
+                }
+                &:hover{
+                    background-color: #FAFF23;
+                }
+                &:hover .img{
+                    animation: scale-shoe-item 1s infinite;
+                    animation-direction: alternate;
+                    filter: drop-shadow(0px 29px 37px rgba(0, 0, 0, 0.56));
+                }
+                .img{
+                    @include responsive(sm){
+                        left: 0;
+                        width: 50%;
+                    }
+                }
+
+            }
+            p{
+                @include styleText(#FFFFFF, 0.9rem, 600);
+                letter-spacing: 0.115em;
+                @include responsive(sm){
+                    font-size: 0.6rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@keyframes scale-shoe-item{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

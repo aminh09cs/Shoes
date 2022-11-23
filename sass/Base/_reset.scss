@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-y: auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(129.86deg, #21E8C4 -20.42%, #179B93 -3.13%, #267B87 24.22%, #0F474F 72.75%);
+    width: 100vw;
+    overflow: clip;
+    background-repeat: no-repeat;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+}
